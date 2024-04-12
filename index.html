@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Martín Delfini" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+
+    <title>Bucle FOR JS</title>
+  </head>
+  <body>
+      <div class="header">
+        <div class="contenedor-botones-fuente">
+        <button class="botones botones-fuentes" id="agrandarFuente">+ aumentar tamaño del texto</button>
+        <button class="botones botones-fuentes" id="reducirFuente">- reducir tamaño del texto</button>
+        </div>
+        <h1>Bucles FOR JS</h1>
+    </div>
+    <div class="separador"></div>
+    <div class="flex-container">
+      <div class="contenedor">
+        <h2>Ejercicio 1</h2>
+
+        <button class="botones" id="boton1" onclick="boton1()">
+          Haz click aquí para ver suceder la mágia
+        </button>
+
+        <ul id="lista-e1">
+          <!-- Aquí irá la lista -->
+        </ul>
+      </div>
+      <div class="contenedor">
+        <h2>Ejercicio 2</h2>
+        <div class="form">
+          <label for="numeroMenor">Introduce un número entre 1 y 10</label>
+          <input type="number" id="numeroMenor" oninput="numeroMenor()" />
+          <p class="textoError" id="textoError1"></p>
+          <label for="numeroMayor">Introduce un número entre 11 y 20</label>
+          <input type="number" id="numeroMayor" oninput="numeroMayor()" />
+          <p class="textoError" id="textoError2"></p>
+        </div>
+        <button class="botones" id="boton2" onclick="boton2()">
+          Ver números impares
+        </button>
+        <ul id="lista-e2">
+          <!-- Aquí irá la lista -->
+        </ul>
+      </div>
+      <div class="contenedor">
+        <h2>Ejercicio 3</h2>
+        <div class="form">
+          <label for="precio1">Precio 1</label>
+          <input class="precio-input" type="number" id="precio1">
+          <label for="precio2">Precio 2</label>
+          <input class="precio-input" type="number" id="precio2">
+          <label for="precio3">Precio 3</label>
+          <input class="precio-input" type="number" id="precio3">
+          <label for="precio4">Precio 4</label>
+          <input class="precio-input" type="number" id="precio4">
+          <label for="precio5">Precio 5</label>
+          <input class="precio-input" type="number" id="precio5">
+        </div>
+        <label for="total">Precio total</label>
+        <input class="botones" id="total" placeholder="€" onlyread>
+        <p class="textoDescuento" id="textoDescuento"></p>
+      </div>
+    </div>
+  </body>
+</html>
